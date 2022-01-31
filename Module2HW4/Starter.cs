@@ -26,9 +26,9 @@ namespace Module2HW4
             Message.ShowMsg($"Motorcycle");
             MotorcycleService.Move((Motorcycle)motorcycle);
 
-            Console.WriteLine(bicycle);
+            Message.ShowMsg(bicycle.ToString());
             Console.WriteLine();
-            Console.WriteLine(motorcycle);
+            Message.ShowMsg(motorcycle.ToString());
             Console.WriteLine();
 
             Vehicle[] vehicles = { (Bicycle)bicycle, (Motorcycle)motorcycle };
@@ -36,21 +36,12 @@ namespace Module2HW4
             var vehicle = vehicles.SearchVehicleWithTheHighestMaxSpeed();
 
             Message.ShowMsg("Vehicle with the most highest max speed: ");
-            if (vehicle is Motorcycle)
-            {
-                Console.WriteLine(motorcycle);
-            }
-            else
-            {
-                Console.WriteLine(bicycle);
-            }
-
-            Console.WriteLine();
+            Message.ShowMsg(vehicle.ToString() + "\n");
 
             vehicle = vehicles.SearchVehicleWithTheHighestCurrentSpeed();
 
             Message.ShowMsg("Vehicle with the most highest current speed: ");
-            Console.WriteLine(vehicle);
+            Message.ShowMsg(vehicle.ToString() + "\n");
         }
     }
 }
