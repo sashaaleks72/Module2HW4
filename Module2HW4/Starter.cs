@@ -50,14 +50,7 @@ namespace Module2HW4
             vehicle = vehicles.SearchVehicleWithTheHighestCurrentSpeed();
 
             Message.ShowMsg("Vehicle with the most highest current speed: ");
-            if (vehicle is Motorcycle)
-            {
-                Console.WriteLine(motorcycle);
-            }
-            else
-            {
-                Console.WriteLine(bicycle);
-            }
+            Console.WriteLine(vehicle);
         }
     }
 }

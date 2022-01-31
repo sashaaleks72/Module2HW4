@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Module2HW4
+﻿namespace Module2HW4
 {
     public interface IMessage
     {
