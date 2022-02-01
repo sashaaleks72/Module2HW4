@@ -2,7 +2,7 @@
 
 namespace Module2HW4
 {
-    public class MessageService : IMessage
+    public class MessageService : IMessageService
     {
         public void ShowMsg(string msg)
         {

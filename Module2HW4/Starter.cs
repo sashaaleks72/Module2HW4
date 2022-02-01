@@ -4,14 +4,14 @@ namespace Module2HW4
 {
     internal class Starter
     {
-        public Starter(IMessage message, IBicycle bicycle, IMotorcycle motorcycle)
+        public Starter(IMessageService message, IBicycle bicycle, IMotorcycle motorcycle)
         {
             Message = message;
             BicycleService = bicycle;
             MotorcycleService = motorcycle;
         }
 
-        private IMessage Message { get; set; }
+        private IMessageService Message { get; set; }
         private IBicycle BicycleService { get; set; }
         private IMotorcycle MotorcycleService { get; set; }
 

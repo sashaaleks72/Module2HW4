@@ -2,34 +2,19 @@
 {
     public abstract class Vehicle
     {
-        private double _currentSpeed;
-        private double _weight;
-        private double _maxSpeed;
-
         public Vehicle()
         {
         }
 
         public Vehicle(double weight, double maxSpeed)
         {
-            _weight = weight;
-            _maxSpeed = maxSpeed;
+            Weight = weight;
+            MaxSpeed = maxSpeed;
         }
 
-        public double Weight => _weight;
-        public double MaxSpeed => _maxSpeed;
-        public double CurrentSpeed
-        {
-            get
-            {
-                return _currentSpeed;
-            }
-            set
-            {
-                _currentSpeed = value;
-            }
-        }
-
+        public double Weight { get; set; }
+        public double MaxSpeed { get; set; }
+        public double CurrentSpeed { get; set; }
         public string State { get; set; }
     }
 }

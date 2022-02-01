@@ -1,11 +1,15 @@
-﻿namespace Module2HW4
+﻿using Autofac;
+
+namespace Module2HW4
 {
     internal class Program
     {
         private static void Main()
         {
-            StartConfig startConfig = new StartConfig();
-            startConfig.Build();
+            var config = new DIConfig();
+            var container = config.Build();
+            var start = container.Resolve<Starter>();
+            start.Run();
         }
     }
 }

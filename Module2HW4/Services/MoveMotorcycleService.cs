@@ -4,12 +4,12 @@ namespace Module2HW4
 {
     public class MoveMotorcycleService : IMotorcycle
     {
-        public MoveMotorcycleService(IMessage message)
+        public MoveMotorcycleService(IMessageService message)
         {
             Message = message;
         }
 
-        private IMessage Message { get; set; }
+        private IMessageService Message { get; set; }
 
         public void Move(Motorcycle motorcycle)
         {
